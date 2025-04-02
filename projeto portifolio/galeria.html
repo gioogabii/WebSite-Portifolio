@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Projetos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="indexAnexo.html"><button>Criar Novo Projeto</button></a></li>
+      <li><button onclick="editProject()">Editar Projeto</button></li>
+      <li><button onclick="logout()">Logout</button></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Pesquisar projetos..." oninput="filterProjects()">
+      </div>
+    </header>
+
+    <section class="gallery">
+      <div class="project" data-title="Projeto 1" onclick="openProject(1)">
+        <img src="img/imagem 1.jpg" alt="Projeto 1">
+        <h3>Projeto 1</h3>
+      </div>
+      <div class="project" data-title="Projeto 2" onclick="openProject(2)">
+        <img src="img/imagem 2.jpg" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+      </div>
+      <div class="project" data-title="Projeto 3" onclick="openProject(3)">
+        <img src="img/imagem 3.jpeg" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+      </div>
+      <div class="project" data-title="Projeto 4" onclick="openProject(4)">
+        <img src="img/imagem 4.jpg" alt="Projeto 4">
+        <h3>Projeto 4</h3>
+      </div>
+      <div class="project" data-title="Projeto 5" onclick="openProject(5)">
+        <img src="img/imagem 5.jpg" alt="Projeto 5">
+        <h3>Projeto 5</h3>
+      </div>
+      <div class="project" data-title="Projeto 6" onclick="openProject(6)">
+        <img src="img/imagem 6.jpg" alt="Projeto 6">
+        <h3>Projeto 6</h3>
+      </div>
+      <div class="project" data-title="Projeto 7" onclick="openProject(7)">
+        <img src="img/imagem 7.jpg" alt="Projeto 7">
+        <h3>Projeto 7</h3>
+      </div>
+      <div class="project" data-title="Projeto 8" onclick="openProject(8)">
+        <img src="img/imagem 8.jpg" alt="Projeto 8">
+        <h3>Projeto 8</h3>
+      </div>
+      <div class="project" data-title="Projeto 9" onclick="openProject(9)">
+        <img src="img/imagem 9.jpg" alt="Projeto 9">
+        <h3>Projeto 9</h3>
+      </div>
+      <div class="project" data-title="Projeto 10" onclick="openProject(10)">
+        <img src="img/imagem 10.jpg" alt="Projeto 10">
+        <h3>Projeto 10</h3>
+      </div>
+      <div class="project" data-title="Projeto 11" onclick="openProject(11)">
+        <img src="img/imagem 11.jpg" alt="Projeto 11">
+        <h3>Projeto 11</h3>
+      </div>
+      <div class="project" data-title="Projeto 12" onclick="openProject(12)">
+        <img src="img/imagem 12.jpg" alt="Projeto 12">
+        <h3>Projeto 12</h3>
+      </div>
+      <div class="project" data-title="Projeto 13" onclick="openProject(13)">
+        <img src="img/imagem 13.jpg" alt="Projeto 13">
+        <h3>Projeto 13</h3>
+      </div>
+      <div class="project" data-title="Projeto 14" onclick="openProject(14)">
+        <img src="img/imagem 14.jpg" alt="Projeto 14">
+        <h3>Projeto 14</h3>
+      </div>
+      <div class="project" data-title="Projeto 15" onclick="openProject(15)">
+        <img src="img/imagem 15.jpg" alt="Projeto 15">
+        <h3>Projeto 15</h3>
+      </div>
+      <div class="project" data-title="Projeto 16" onclick="openProject(16)">
+        <img src="img/imagem 16.jpg" alt="Projeto 16">
+        <h3>Projeto 16</h3>
+      </div>
+    </section>
+
+    <div id="projectModal" class="project-modal" onclick="closeProject()">
+      <div class="project-content" onclick="event.stopPropagation()">
+        <button class="close-btn" onclick="closeProject()">X</button>
+        <h2 id="modalTitle"></h2>
+        <div class="carousel" id="carousel" onwheel="moveCarousel(event)">
+          <div class="carousel-images" id="carouselImages"></div>
+        </div>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="scriptgaleria.js"></script>
+</body>
+</html>

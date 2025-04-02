@@ -1,0 +1,38 @@
+1. Pré-requisitos
+Antes de iniciar, certifique-se de ter os seguintes programas instalados:
+
+XAMPP (para rodar Apache e PHP)
+Ao baixar o XAMPP, abra o aplicativo e clique em "Start" no módulo Apache para iniciar o servidor local.
+
+MySQL Workbench (ou outro SGBD de sua preferência)
+
+🐬 2. Configurando o Banco de Dados via MySQL Workbench
+Abra o MySQL Workbench (ou outro SGBD de sua preferência).
+Conecte-se ao seu servidor local (127.0.0.1).
+Crie um novo banco de dados com o nome portfolio_db.
+Acesse a aba de SQL e execute os comandos abaixo para criar as tabelas necessárias:
+CREATE DATABASE portifolio;
+USE portifolio;
+CREATE TABLE cadastroUser (
+    codUser INT PRIMARY KEY AUTO_INCREMENT,
+    nomeUser VARCHAR(50) NOT NULL,
+    emailUser VARCHAR(30),
+    senha VARCHAR(15)
+);
+
+CREATE TABLE AnexarImg (
+	CodImg INT PRIMARY KEY AUTO_INCREMENT,
+    nomeAutor VARCHAR(30),
+	tituloImg VARCHAR(30),
+    categoria VARCHAR(20),
+    descricao VARCHAR(50),
+    pathImg VARCHAR(256)
+);
+
+3. Executando o Projeto
+clone o projeto no diretório do XAMPP, dentro de htdocs
+
+4. Em seguida, entre no link:
+SignUp_LogIn_Form.html
+
+5. Enjoy!
