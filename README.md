@@ -28,7 +28,7 @@ Instale o XAMPP e inicie os serviços Apache e MySQL através do Painel de Contr
 2️⃣ Clonar ou baixar o projeto
 
 Faça o download do repositório ou clone usando o Git:
-git clone https://github.com/giogabi/projeto-portifolio.git
+git clone https://github.com/gioogabii/projeto-portifolio.git
  Mover o projeto para a pasta correta
 
 Após baixar/clonar, copie a pasta do projeto e cole dentro da pasta htdocs do XAMPP (exemplo: C:\xampp\htdocs\projeto-portifolio).
